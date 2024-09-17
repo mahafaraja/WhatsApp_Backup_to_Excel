@@ -9,6 +9,7 @@ from pushbullet import PushBullet  # pip install pushbullet.py == 0.9.1
 Access_token = "o.aUTXEomlNPUbJQpdzl4YxQjybOSE0uRz"
 pb = PushBullet(Access_token)  # Authentication
 
+
 all_pushes = pb.get_pushes()  # All pushes created by you
 latest_one = all_pushes[0]  # Get the latest push
 url = latest_one['file_url']  # Fetch the latest file URL link
